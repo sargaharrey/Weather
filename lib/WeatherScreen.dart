@@ -178,9 +178,13 @@ class WeatherState extends  State<WeatherScreen> {
                     scrollDirection: Axis.horizontal,
 
                     children: [
+
                       Container(
                           margin: EdgeInsets.only(right: 30),
-                          child: Column(
+                  child:InkWell(
+                      onTap: ()=> print("hello"),
+
+                      child: Column(
                               mainAxisAlignment: MainAxisAlignment
                                   .spaceBetween,
                               children: [
@@ -195,10 +199,13 @@ class WeatherState extends  State<WeatherScreen> {
                                         .bold, color: Color.fromRGBO(
                                         38, 49, 68, 1), fontSize: 14,))
                               ])
-                      ),
+                      )),
                       Container(
                           margin: EdgeInsets.only(right: 30),
-                          child: Column(
+                        child:InkWell(
+                            onTap: ()=> print("hello"),
+
+                            child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text('Mon',
@@ -211,10 +218,14 @@ class WeatherState extends  State<WeatherScreen> {
                                   style: TextStyle(fontWeight: FontWeight
                                       .bold, color: Color.fromRGBO(
                                       38, 49, 68, 1), fontSize: 14,))
-                            ],)),
+                            ],))
+                      ),
                       Container(
                           margin: EdgeInsets.only(right: 30),
-                          child: Column(
+                        child:InkWell(
+                            onTap: ()=> print("hello"),
+
+                            child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text('Tue',
@@ -227,10 +238,14 @@ class WeatherState extends  State<WeatherScreen> {
                                   style: TextStyle(fontWeight: FontWeight
                                       .bold, color: Color.fromRGBO(
                                       38, 49, 68, 1), fontSize: 14,))
-                            ],)),
+                            ],)
+                        )),
                       Container(
                           margin: EdgeInsets.only(right: 30),
-                          child: Column(
+                        child:InkWell(
+                            onTap: ()=> print("hello"),
+
+                            child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text('Wed',
@@ -243,10 +258,14 @@ class WeatherState extends  State<WeatherScreen> {
                                   style: TextStyle(fontWeight: FontWeight
                                       .bold, color: Color.fromRGBO(
                                       38, 49, 68, 1), fontSize: 14,))
-                            ],)),
+                            ],))
+                      ),
                       Container(
                           margin: EdgeInsets.only(right: 30),
-                          child: Column(
+                        child:InkWell(
+                            onTap: ()=> print("hello"),
+
+                            child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text('Thu',
@@ -259,11 +278,15 @@ class WeatherState extends  State<WeatherScreen> {
                                   style: TextStyle(fontWeight: FontWeight
                                       .bold, color: Color.fromRGBO(
                                       38, 49, 68, 1), fontSize: 14,))
-                            ],)),
+                            ],)
+                        )),
                       Container(
 
                           margin: EdgeInsets.only(right: 30),
-                          child: Column(
+                          child:InkWell(
+                              onTap: ()=> print("hello"),
+
+                              child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text('Fri',
@@ -276,10 +299,14 @@ class WeatherState extends  State<WeatherScreen> {
                                   style: TextStyle(fontWeight: FontWeight
                                       .bold, color: Color.fromRGBO(
                                       38, 49, 68, 1), fontSize: 14,))
-                            ],)),
+                            ],))
+            ),
                       Container(
                           margin: EdgeInsets.only(right: 30),
-                          child: Column(
+                        child:InkWell(
+                            onTap: ()=> print("hello"),
+
+                            child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text('Sat',
@@ -292,10 +319,14 @@ class WeatherState extends  State<WeatherScreen> {
                                   style: TextStyle(fontWeight: FontWeight
                                       .bold, color: Color.fromRGBO(
                                       38, 49, 68, 1), fontSize: 14,))
-                            ],)),
+                            ],))
+                      ),
                       Container(
                           margin: EdgeInsets.only(right: 30),
-                          child: Column(
+                        child:InkWell(
+                            onTap: ()=> print("hello"),
+
+                            child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text('Sun',
@@ -309,6 +340,7 @@ class WeatherState extends  State<WeatherScreen> {
                                       .bold, color: Color.fromRGBO(
                                       38, 49, 68, 1), fontSize: 14,))
                             ],))
+                      )
 
                     ],
 

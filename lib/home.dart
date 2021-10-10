@@ -161,7 +161,11 @@ class HomeState extends  State<HomeScreen>  {
 
                       children: [
                         Container(
+
                             margin: EdgeInsets.only(right: 30),
+                            child:InkWell(
+                              onTap: ()=> print("hello"),
+
                             child: Column(
                                 mainAxisAlignment: MainAxisAlignment
                                     .spaceBetween,
@@ -177,10 +181,15 @@ class HomeState extends  State<HomeScreen>  {
                                           .bold, color: Color.fromRGBO(
                                           38, 49, 68, 1), fontSize: 14,))
                                 ])
+                        )
                         ),
+                    ,
                         Container(
                             margin: EdgeInsets.only(right: 30),
-                            child: Column(
+                          child:InkWell(
+                              onTap: ()=> print("hello"),
+
+                              child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text('Mon',
@@ -193,9 +202,13 @@ class HomeState extends  State<HomeScreen>  {
                                     style: TextStyle(fontWeight: FontWeight
                                         .bold, color: Color.fromRGBO(
                                         38, 49, 68, 1), fontSize: 14,))
-                              ],)),
+                              ],))
+    ),
                         Container(
                             margin: EdgeInsets.only(right: 30),
+                            child:InkWell(
+                            onTap: ()=> print("hello"),
+
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -209,9 +222,14 @@ class HomeState extends  State<HomeScreen>  {
                                     style: TextStyle(fontWeight: FontWeight
                                         .bold, color: Color.fromRGBO(
                                         38, 49, 68, 1), fontSize: 14,))
-                              ],)),
+                              ],)
+    )
+    ),
                         Container(
                             margin: EdgeInsets.only(right: 30),
+                            child:InkWell(
+                            onTap: ()=> print("hello"),
+
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -225,9 +243,12 @@ class HomeState extends  State<HomeScreen>  {
                                     style: TextStyle(fontWeight: FontWeight
                                         .bold, color: Color.fromRGBO(
                                         38, 49, 68, 1), fontSize: 14,))
-                              ],)),
+                              ],))),
                         Container(
                             margin: EdgeInsets.only(right: 30),
+                            child:InkWell(
+                            onTap: ()=> print("hello"),
+
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -241,10 +262,14 @@ class HomeState extends  State<HomeScreen>  {
                                     style: TextStyle(fontWeight: FontWeight
                                         .bold, color: Color.fromRGBO(
                                         38, 49, 68, 1), fontSize: 14,))
-                              ],)),
+                              ],)
+    )),
                         Container(
 
                             margin: EdgeInsets.only(right: 30),
+                            child:InkWell(
+                            onTap: ()=> print("hello"),
+
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -258,10 +283,14 @@ class HomeState extends  State<HomeScreen>  {
                                     style: TextStyle(fontWeight: FontWeight
                                         .bold, color: Color.fromRGBO(
                                         38, 49, 68, 1), fontSize: 14,))
-                              ],)),
+                              ],)
+                              )),
                         Container(
                             margin: EdgeInsets.only(right: 30),
-                            child: Column(
+                              child:InkWell(
+                              onTap: ()=> print("hello"),
+
+                              child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text('Sat',
@@ -274,9 +303,13 @@ class HomeState extends  State<HomeScreen>  {
                                     style: TextStyle(fontWeight: FontWeight
                                         .bold, color: Color.fromRGBO(
                                         38, 49, 68, 1), fontSize: 14,))
-                              ],)),
+                              ],))
+    ),
                         Container(
                             margin: EdgeInsets.only(right: 30),
+                            child:InkWell(
+                            onTap: ()=> print("hello"),
+
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -291,7 +324,7 @@ class HomeState extends  State<HomeScreen>  {
                                         .bold, color: Color.fromRGBO(
                                         38, 49, 68, 1), fontSize: 14,))
                               ],))
-
+    )
                       ],
 
 

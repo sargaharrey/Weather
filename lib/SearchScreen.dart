@@ -51,14 +51,7 @@ class SearchState extends State<SearchScreen> {
                         .of(context)
                         .primaryColorDark, size: 20),
                   ),
-                  Container(
 
-                    child: Text("Egypt", style: TextStyle(
-                        fontWeight: FontWeight.bold, color: Theme
-                        .of(context)
-                        .primaryColorDark, fontSize: 20, fontFamily: 'Roboto')
-                    ),
-                  )
                 ]
             ),
 
@@ -117,7 +110,9 @@ class SearchState extends State<SearchScreen> {
                   )
 
              ),
-               Container(
+          InkWell(
+            onTap:() => print("hello"),
+              child:Container(
                  margin: EdgeInsets.symmetric(vertical: 10,horizontal: 0),
                  padding: EdgeInsets.symmetric(vertical: 20,horizontal: 15),
                  decoration: BoxDecoration(
@@ -134,30 +129,37 @@ class SearchState extends State<SearchScreen> {
                  ),
                  child: Column(
                    children:[
-                   Row(
-                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                   children: [
-                     Icon(FontAwesomeIcons.cloudMoon,size: 100,color: Theme.of(context).primaryColorDark,),
-                     Column(
-                       crossAxisAlignment: CrossAxisAlignment.end,
-                       children: [
+                    Row(
+                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                         children: [
+                           Icon(FontAwesomeIcons.cloudMoon,size: 100,color: Theme.of(context).primaryColorDark,),
+                           Column(
+                             crossAxisAlignment: CrossAxisAlignment.end,
+                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                             children: [
 
-                         Text("25°",style: TextStyle(color:Color.fromRGBO(81, 109, 255, 1),fontSize: 42,fontWeight: FontWeight.bold )),
-                         Row(
-                           children: [
-                           Icon(FontAwesomeIcons.mapMarkerAlt,size: 20,color: Theme.of(context).primaryColorDark,),
-                             Text("Clouds & sun",style: TextStyle(color:Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.normal )),
-                         ],)
+                               Text("25°",style: TextStyle(color:Color.fromRGBO(81, 109, 255, 1),fontSize: 42,fontWeight: FontWeight.bold )),
+                               Text("Egypt",style: TextStyle(color:Color.fromRGBO(81, 109, 255, 1),fontSize: 20,fontWeight: FontWeight.bold )),
+                               Row(
+                                 children: [
+                                   Icon(FontAwesomeIcons.mapMarkerAlt,size: 20,color: Theme.of(context).primaryColorDark,),
+                                   Text("Clouds & sun",style: TextStyle(color:Theme.of(context).primaryColorDark,fontSize: 20,fontWeight: FontWeight.normal )),
+                                 ],)
 
-                       ],
-                     )
-                   ],
-                 ),
+                             ],
+                           )
+                         ],
+                       ),
 
-            ],
+                     ]
+                 )
+
+
+              ),
           ),
-        ),
-              Container(
+            InkWell(
+                onTap:() => print("hello"),
+              child: Container(
                 margin: EdgeInsets.symmetric(vertical: 20,horizontal: 0),
                 padding: EdgeInsets.symmetric(vertical: 20,horizontal: 15),
                 decoration: BoxDecoration(
@@ -183,6 +185,7 @@ class SearchState extends State<SearchScreen> {
                           children: [
 
                             Text("25°",style: TextStyle(color:Color.fromRGBO(81, 109, 255, 1),fontSize: 42,fontWeight: FontWeight.bold )),
+                            Text("Germany",style: TextStyle(color:Color.fromRGBO(81, 109, 255, 1),fontSize: 20,fontWeight: FontWeight.bold )),
                             Row(
                               children: [
                                 Icon(FontAwesomeIcons.mapMarkerAlt,size: 20,color: Theme.of(context).primaryColorDark,),
@@ -197,7 +200,10 @@ class SearchState extends State<SearchScreen> {
                   ],
                 ),
               ),
-              Container(
+              ),
+            InkWell(
+                onTap:() => print("hello"),
+              child: Container(
                 margin: EdgeInsets.symmetric(vertical: 20,horizontal: 0),
                 padding: EdgeInsets.symmetric(vertical: 20,horizontal: 15),
                 decoration: BoxDecoration(
@@ -223,6 +229,7 @@ class SearchState extends State<SearchScreen> {
                           children: [
 
                             Text("25°",style: TextStyle(color:Color.fromRGBO(81, 109, 255, 1),fontSize: 42,fontWeight: FontWeight.bold )),
+                            Text("Italy",style: TextStyle(color:Color.fromRGBO(81, 109, 255, 1),fontSize: 20,fontWeight: FontWeight.bold )),
                             Row(
                               children: [
                                 Icon(FontAwesomeIcons.mapMarkerAlt,size: 20,color: Theme.of(context).primaryColorDark,),
@@ -237,6 +244,7 @@ class SearchState extends State<SearchScreen> {
                   ],
                 ),
               )
+            )
     ]
     )
         )
